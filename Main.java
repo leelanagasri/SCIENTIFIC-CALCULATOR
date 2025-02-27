@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.event.*;
 import java.awt.*;
 
-public class fourth implements ActionListener{
+public class Main implements ActionListener{
 	
 	
 	JFrame frame;
@@ -45,7 +45,7 @@ public class fourth implements ActionListener{
 	JButton back;
 	JButton dec;
 	
-	public fourth() {
+	public Main() {
 		frame = new JFrame("Scientific Calculator");
 		frame.setResizable(false);
 		frame.setSize(400, 600);
@@ -305,12 +305,7 @@ public class fourth implements ActionListener{
 		frame.add(fact);
 		frame.setVisible(true);
 	}
-	
-	
-	public static void main(String[] args) {
-		new fourth();
-	}
-	
+		
 	
 	@Override
 	public void actionPerformed(ActionEvent e) {
@@ -554,6 +549,11 @@ public class fourth implements ActionListener{
 		if(!str.isEmpty()) {
 			tf.setText(str.substring(0,str.length()-1));
 		}
+	}
+
+	
+	public static void main(String[] args) {
+		new Main();
 	}
 
 }
